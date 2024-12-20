@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 
+        0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 20px 25px -5px rgb(0 0 0 / 0.05);
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--success-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+}

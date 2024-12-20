@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Todo List</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/container.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/todo-list.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Tasks</h1>
+            <p class="subtitle">Stay organized, stay productive</p>
+        </header>
+        
+        <form id="todo-form" class="todo-form">
+            <input 
+                type="text" 
+                id="todo-input" 
+                placeholder="What needs to be done?"
+                autocomplete="off"
+            >
+            <button type="submit">
+                Add Task
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                </svg>
+            </button>
+        </form>
+
+        <div class="todos-wrapper">
+            <div class="todos-header">
+                <span id="tasks-counter">0 tasks</span>
+                <button id="clear-completed" class="clear-btn">Clear completed</button>
+            </div>
+            <ul id="todo-list" class="todo-list"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
